@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SortSelectorView" customModule="EMS_iOS_App" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="1dz-Th-WCA" id="U45-aW-ZHu"/>
+                <outlet property="defaultSort" destination="WgH-uc-bSe" id="kGM-sL-IcB"/>
+                <outlet property="distanceSort" destination="5HO-p7-gGp" id="Xcg-pC-K0f"/>
+                <outlet property="nameSort" destination="ZHn-rn-D08" id="0WU-aB-dqy"/>
+                <outlet property="nedocsSort" destination="HPV-3g-TrA" id="D13-kE-r3o"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1dz-Th-WCA">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="197"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="bottom" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ffF-Sn-a18" userLabel="Sort Selector Base">
+                    <rect key="frame" x="0.0" y="-11" width="414" height="208"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tT3-1w-ODB" userLabel="Top Bar">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sort By" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gec-53-ajR" userLabel="Sort Selector Title">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.21654921769999999" green="0.34155178069999997" blue="0.64439314599999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="1wG-n2-0Pv"/>
+                                <constraint firstItem="Gec-53-ajR" firstAttribute="centerX" secondItem="tT3-1w-ODB" secondAttribute="centerX" id="EgY-8A-zqk"/>
+                                <constraint firstItem="Gec-53-ajR" firstAttribute="centerY" secondItem="tT3-1w-ODB" secondAttribute="centerY" id="PSc-Jc-sPL"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lvB-0A-zd9" userLabel="Sort Fields">
+                            <rect key="frame" x="0.0" y="55" width="414" height="123"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgH-uc-bSe" userLabel="Name">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                    <state key="normal" title="No Sort">
+                                        <color key="titleColor" systemColor="labelColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onSortClickListener:" destination="-1" eventType="touchUpInside" id="Urc-bx-WYQ"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="urL-4M-FuW" userLabel="Horizontal Break">
+                                    <rect key="frame" x="0.0" y="30" width="414" height="1"/>
+                                    <color key="backgroundColor" name="MainColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="d6g-QU-F5f"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHn-rn-D08" userLabel="Name">
+                                    <rect key="frame" x="0.0" y="31" width="414" height="30"/>
+                                    <state key="normal" title="A - Z">
+                                        <color key="titleColor" systemColor="labelColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onSortClickListener:" destination="-1" eventType="touchUpInside" id="l7k-C5-KIS"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Dg-eF-t6F" userLabel="Horizontal Break">
+                                    <rect key="frame" x="0.0" y="61" width="414" height="1"/>
+                                    <color key="backgroundColor" name="MainColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="xIt-LN-NZD"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5HO-p7-gGp" userLabel="Distance">
+                                    <rect key="frame" x="0.0" y="62" width="414" height="30"/>
+                                    <state key="normal" title="Distance">
+                                        <color key="titleColor" systemColor="labelColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onSortClickListener:" destination="-1" eventType="touchUpInside" id="Aep-aP-MoT"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAM-i0-Kxb" userLabel="Horizontal Break">
+                                    <rect key="frame" x="0.0" y="92" width="414" height="1"/>
+                                    <color key="backgroundColor" name="MainColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="qsj-9z-Gx7"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPV-3g-TrA" userLabel="Nedocs">
+                                    <rect key="frame" x="0.0" y="93" width="414" height="30"/>
+                                    <state key="normal" title="Nedocs">
+                                        <color key="titleColor" systemColor="labelColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onSortClickListener:" destination="-1" eventType="touchUpInside" id="dtw-gd-X1x"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJb-5V-z3p" userLabel="Bottom Bar">
+                            <rect key="frame" x="0.0" y="178" width="414" height="30"/>
+                            <color key="backgroundColor" red="0.21654921769999999" green="0.34155178069999997" blue="0.64439314599999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="JGB-S7-A7d"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="BJb-5V-z3p" secondAttribute="trailing" id="EIX-bc-iEB"/>
+                        <constraint firstItem="tT3-1w-ODB" firstAttribute="leading" secondItem="ffF-Sn-a18" secondAttribute="leading" id="a80-wd-F81"/>
+                        <constraint firstItem="BJb-5V-z3p" firstAttribute="leading" secondItem="ffF-Sn-a18" secondAttribute="leading" id="d2q-XF-6vk"/>
+                        <constraint firstAttribute="trailing" secondItem="tT3-1w-ODB" secondAttribute="trailing" id="gJ1-9E-wFE"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Mp5-da-8o3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ffF-Sn-a18" firstAttribute="leading" secondItem="Mp5-da-8o3" secondAttribute="leading" id="N0v-Pv-tAH"/>
+                <constraint firstItem="ffF-Sn-a18" firstAttribute="trailing" secondItem="Mp5-da-8o3" secondAttribute="trailing" id="htq-E7-KA6"/>
+                <constraint firstItem="Mp5-da-8o3" firstAttribute="bottom" secondItem="ffF-Sn-a18" secondAttribute="bottom" id="xuj-Gm-XTC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-366.66666666666669" y="723.54910714285711"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="MainColor">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

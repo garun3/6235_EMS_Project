@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		945D313529242F5100B7D47E /* RecommendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945D313429242F5100B7D47E /* RecommendVC.swift */; };
+		945D313729244B9F00B7D47E /* RecommendationIH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945D313629244B9F00B7D47E /* RecommendationIH.swift */; };
+		945D31392924822D00B7D47E /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945D31382924822D00B7D47E /* StartVC.swift */; };
+		949E8C3625FA9DC500FF934E /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949E8C3525FA9DC500FF934E /* LoadingVC.swift */; };
+		94CC6A9F25E6BD3C00D4294C /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC6A9E25E6BD3C00D4294C /* Enums.swift */; };
+		94CC6AA125E6BD4C00D4294C /* BackendURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC6AA025E6BD4C00D4294C /* BackendURLs.swift */; };
+		94CC6AA525E6BD5C00D4294C /* HospitalsTasker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC6AA325E6BD5C00D4294C /* HospitalsTasker.swift */; };
+		94CC6AA625E6BD5C00D4294C /* WebCallTasker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC6AA425E6BD5C00D4294C /* WebCallTasker.swift */; };
+		94E3B203255A3A200021FCAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E3B202255A3A200021FCAA /* AppDelegate.swift */; };
+		94E3B205255A3A200021FCAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E3B204255A3A200021FCAA /* SceneDelegate.swift */; };
+		94E3B20A255A3A200021FCAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E3B208255A3A200021FCAA /* Main.storyboard */; };
+		94E3B20C255A3A240021FCAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94E3B20B255A3A240021FCAA /* Assets.xcassets */; };
+		94E3B20F255A3A240021FCAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E3B20D255A3A240021FCAA /* LaunchScreen.storyboard */; };
+		94E3B21A255A3A240021FCAA /* EMS_iOS_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E3B219255A3A240021FCAA /* EMS_iOS_AppTests.swift */; };
+		94E3B225255A3A240021FCAA /* EMS_iOS_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E3B224255A3A240021FCAA /* EMS_iOS_AppUITests.swift */; };
+		94E3B274255A3DF70021FCAA /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E3B273255A3DF70021FCAA /* HomeVC.swift */; };
+		94E3B277255A420F0021FCAA /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E3B276255A420F0021FCAA /* HomeTableViewCell.swift */; };
+		94E3B27F255A551E0021FCAA /* HospitalIH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E3B27E255A551E0021FCAA /* HospitalIH.swift */; };
+		94E3B281255A5A6A0021FCAA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E3B280255A5A6A0021FCAA /* Utils.swift */; };
+		BE388A5A2613D1B900A3403E /* CheckListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE388A592613D1B900A3403E /* CheckListCell.swift */; };
+		BE9C6D77261466A900BB30F6 /* FilterSelectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9C6D76261466A900BB30F6 /* FilterSelectorVC.swift */; };
+		BE9C6D8526146F9F00BB30F6 /* FilterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9C6D8426146F9F00BB30F6 /* FilterCard.swift */; };
+		BEA90F9D26217CF800E646BC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA90F9C26217CF800E646BC /* Colors.xcassets */; };
+		BEA90FA22621838000E646BC /* MenuPopupHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA90FA12621838000E646BC /* MenuPopupHandler.swift */; };
+		BEA90FA8262183B200E646BC /* SortSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA90FA7262183B200E646BC /* SortSelectorView.swift */; };
+		BEA90FB0262183F000E646BC /* SortSelectorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEA90FAF262183F000E646BC /* SortSelectorView.xib */; };
+		BEEDE79326143DB30011BB13 /* FilterIH.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEDE79226143DB30011BB13 /* FilterIH.swift */; };
+		BEF8000C261E2E26007A7E02 /* FilterCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8000B261E2E26007A7E02 /* FilterCheckbox.swift */; };
+		BEF80012261E2E53007A7E02 /* FilterCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEF80011261E2E53007A7E02 /* FilterCard.xib */; };
+		BEF8FFFF261E2DF6007A7E02 /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF8FFFE261E2DF6007A7E02 /* FilterButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94E3B216255A3A240021FCAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94E3B1F7255A3A200021FCAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94E3B1FE255A3A200021FCAA;
+			remoteInfo = "EMS iOS App";
+		};
+		94E3B221255A3A240021FCAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94E3B1F7255A3A200021FCAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94E3B1FE255A3A200021FCAA;
+			remoteInfo = "EMS iOS App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		945D313429242F5100B7D47E /* RecommendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendVC.swift; sourceTree = "<group>"; };
+		945D313629244B9F00B7D47E /* RecommendationIH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationIH.swift; sourceTree = "<group>"; };
+		945D31382924822D00B7D47E /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
+		949E8C3525FA9DC500FF934E /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
+		94CC6A9E25E6BD3C00D4294C /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		94CC6AA025E6BD4C00D4294C /* BackendURLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendURLs.swift; sourceTree = "<group>"; };
+		94CC6AA325E6BD5C00D4294C /* HospitalsTasker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitalsTasker.swift; sourceTree = "<group>"; };
+		94CC6AA425E6BD5C00D4294C /* WebCallTasker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebCallTasker.swift; sourceTree = "<group>"; };
+		94E3B1FF255A3A200021FCAA /* EMS iOS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EMS iOS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94E3B202255A3A200021FCAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94E3B204255A3A200021FCAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		94E3B209255A3A200021FCAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94E3B20B255A3A240021FCAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94E3B20E255A3A240021FCAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94E3B210255A3A240021FCAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94E3B215255A3A240021FCAA /* EMS iOS AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EMS iOS AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94E3B219255A3A240021FCAA /* EMS_iOS_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMS_iOS_AppTests.swift; sourceTree = "<group>"; };
+		94E3B21B255A3A240021FCAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94E3B220255A3A240021FCAA /* EMS iOS AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EMS iOS AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94E3B224255A3A240021FCAA /* EMS_iOS_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMS_iOS_AppUITests.swift; sourceTree = "<group>"; };
+		94E3B226255A3A240021FCAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94E3B273255A3DF70021FCAA /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		94E3B276255A420F0021FCAA /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		94E3B27E255A551E0021FCAA /* HospitalIH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalIH.swift; sourceTree = "<group>"; };
+		94E3B280255A5A6A0021FCAA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		BE388A592613D1B900A3403E /* CheckListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListCell.swift; sourceTree = "<group>"; };
+		BE9C6D76261466A900BB30F6 /* FilterSelectorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSelectorVC.swift; sourceTree = "<group>"; };
+		BE9C6D8426146F9F00BB30F6 /* FilterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCard.swift; sourceTree = "<group>"; };
+		BEA90F9C26217CF800E646BC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		BEA90FA12621838000E646BC /* MenuPopupHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPopupHandler.swift; sourceTree = "<group>"; };
+		BEA90FA7262183B200E646BC /* SortSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortSelectorView.swift; sourceTree = "<group>"; };
+		BEA90FAF262183F000E646BC /* SortSelectorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SortSelectorView.xib; sourceTree = "<group>"; };
+		BEEDE79226143DB30011BB13 /* FilterIH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterIH.swift; sourceTree = "<group>"; };
+		BEF8000B261E2E26007A7E02 /* FilterCheckbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCheckbox.swift; sourceTree = "<group>"; };
+		BEF80011261E2E53007A7E02 /* FilterCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterCard.xib; sourceTree = "<group>"; };
+		BEF8001C261E787A007A7E02 /* gpxgenerator_path.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = gpxgenerator_path.gpx; path = ../../../../../Downloads/gpxgenerator_path.gpx; sourceTree = "<group>"; };
+		BEF8FFFE261E2DF6007A7E02 /* FilterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94E3B1FC255A3A200021FCAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94E3B212255A3A240021FCAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94E3B21D255A3A240021FCAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94CC6AA225E6BD5C00D4294C /* Taskers */ = {
+			isa = PBXGroup;
+			children = (
+				94CC6AA325E6BD5C00D4294C /* HospitalsTasker.swift */,
+				94CC6AA425E6BD5C00D4294C /* WebCallTasker.swift */,
+			);
+			path = Taskers;
+			sourceTree = "<group>";
+		};
+		94E3B1F6255A3A200021FCAA = {
+			isa = PBXGroup;
+			children = (
+				BEF8001C261E787A007A7E02 /* gpxgenerator_path.gpx */,
+				94E3B201255A3A200021FCAA /* EMS iOS App */,
+				94E3B218255A3A240021FCAA /* EMS iOS AppTests */,
+				94E3B223255A3A240021FCAA /* EMS iOS AppUITests */,
+				94E3B200255A3A200021FCAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94E3B200255A3A200021FCAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94E3B1FF255A3A200021FCAA /* EMS iOS App.app */,
+				94E3B215255A3A240021FCAA /* EMS iOS AppTests.xctest */,
+				94E3B220255A3A240021FCAA /* EMS iOS AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94E3B201255A3A200021FCAA /* EMS iOS App */ = {
+			isa = PBXGroup;
+			children = (
+				94E3B202255A3A200021FCAA /* AppDelegate.swift */,
+				94E3B204255A3A200021FCAA /* SceneDelegate.swift */,
+				94E3B210255A3A240021FCAA /* Info.plist */,
+				94E3B280255A5A6A0021FCAA /* Utils.swift */,
+				94E3B236255A3BD00021FCAA /* Business_Layer */,
+				94E3B232255A3B3E0021FCAA /* UI_Layer */,
+			);
+			path = "EMS iOS App";
+			sourceTree = "<group>";
+		};
+		94E3B218255A3A240021FCAA /* EMS iOS AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				94E3B219255A3A240021FCAA /* EMS_iOS_AppTests.swift */,
+				94E3B21B255A3A240021FCAA /* Info.plist */,
+			);
+			path = "EMS iOS AppTests";
+			sourceTree = "<group>";
+		};
+		94E3B223255A3A240021FCAA /* EMS iOS AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				94E3B224255A3A240021FCAA /* EMS_iOS_AppUITests.swift */,
+				94E3B226255A3A240021FCAA /* Info.plist */,
+			);
+			path = "EMS iOS AppUITests";
+			sourceTree = "<group>";
+		};
+		94E3B232255A3B3E0021FCAA /* UI_Layer */ = {
+			isa = PBXGroup;
+			children = (
+				94E3B233255A3B6A0021FCAA /* VCs */,
+				94E3B234255A3B730021FCAA /* Storyboards */,
+				94E3B235255A3B7E0021FCAA /* Images */,
+				94E3B27A255A44D60021FCAA /* Views */,
+				BEA90F9C26217CF800E646BC /* Colors.xcassets */,
+			);
+			path = UI_Layer;
+			sourceTree = "<group>";
+		};
+		94E3B233255A3B6A0021FCAA /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				BEA90FA6262183A000E646BC /* Sort */,
+				BE388A372612ED3000A3403E /* Filter */,
+				949E8C3525FA9DC500FF934E /* LoadingVC.swift */,
+				945D31382924822D00B7D47E /* StartVC.swift */,
+				945D313429242F5100B7D47E /* RecommendVC.swift */,
+				94E3B275255A41EA0021FCAA /* Home */,
+				BEA90FA12621838000E646BC /* MenuPopupHandler.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		94E3B234255A3B730021FCAA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				94E3B208255A3A200021FCAA /* Main.storyboard */,
+				94E3B20D255A3A240021FCAA /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		94E3B235255A3B7E0021FCAA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				94E3B20B255A3A240021FCAA /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		94E3B236255A3BD00021FCAA /* Business_Layer */ = {
+			isa = PBXGroup;
+			children = (
+				94CC6AA025E6BD4C00D4294C /* BackendURLs.swift */,
+				94CC6A9E25E6BD3C00D4294C /* Enums.swift */,
+				94CC6AA225E6BD5C00D4294C /* Taskers */,
+				94E3B27D255A54F60021FCAA /* Information_Holders */,
+			);
+			path = Business_Layer;
+			sourceTree = "<group>";
+		};
+		94E3B275255A41EA0021FCAA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				94E3B273255A3DF70021FCAA /* HomeVC.swift */,
+				94E3B276255A420F0021FCAA /* HomeTableViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		94E3B27A255A44D60021FCAA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BEA90FB42621840A00E646BC /* Sort */,
+				BEF80010261E2E53007A7E02 /* Filter */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		94E3B27D255A54F60021FCAA /* Information_Holders */ = {
+			isa = PBXGroup;
+			children = (
+				94E3B27E255A551E0021FCAA /* HospitalIH.swift */,
+				BEEDE79226143DB30011BB13 /* FilterIH.swift */,
+				945D313629244B9F00B7D47E /* RecommendationIH.swift */,
+			);
+			path = Information_Holders;
+			sourceTree = "<group>";
+		};
+		BE388A372612ED3000A3403E /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				BEF8000B261E2E26007A7E02 /* FilterCheckbox.swift */,
+				BEF8FFFE261E2DF6007A7E02 /* FilterButton.swift */,
+				BE9C6D76261466A900BB30F6 /* FilterSelectorVC.swift */,
+				BE388A592613D1B900A3403E /* CheckListCell.swift */,
+				BE9C6D8426146F9F00BB30F6 /* FilterCard.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		BEA90FA6262183A000E646BC /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				BEA90FA7262183B200E646BC /* SortSelectorView.swift */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		BEA90FB42621840A00E646BC /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				BEA90FAF262183F000E646BC /* SortSelectorView.xib */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		BEF80010261E2E53007A7E02 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				BEF80011261E2E53007A7E02 /* FilterCard.xib */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94E3B1FE255A3A200021FCAA /* EMS iOS App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94E3B229255A3A240021FCAA /* Build configuration list for PBXNativeTarget "EMS iOS App" */;
+			buildPhases = (
+				94E3B1FB255A3A200021FCAA /* Sources */,
+				94E3B1FC255A3A200021FCAA /* Frameworks */,
+				94E3B1FD255A3A200021FCAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EMS iOS App";
+			productName = "EMS iOS App";
+			productReference = 94E3B1FF255A3A200021FCAA /* EMS iOS App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94E3B214255A3A240021FCAA /* EMS iOS AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94E3B22C255A3A240021FCAA /* Build configuration list for PBXNativeTarget "EMS iOS AppTests" */;
+			buildPhases = (
+				94E3B211255A3A240021FCAA /* Sources */,
+				94E3B212255A3A240021FCAA /* Frameworks */,
+				94E3B213255A3A240021FCAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94E3B217255A3A240021FCAA /* PBXTargetDependency */,
+			);
+			name = "EMS iOS AppTests";
+			productName = "EMS iOS AppTests";
+			productReference = 94E3B215255A3A240021FCAA /* EMS iOS AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		94E3B21F255A3A240021FCAA /* EMS iOS AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94E3B22F255A3A240021FCAA /* Build configuration list for PBXNativeTarget "EMS iOS AppUITests" */;
+			buildPhases = (
+				94E3B21C255A3A240021FCAA /* Sources */,
+				94E3B21D255A3A240021FCAA /* Frameworks */,
+				94E3B21E255A3A240021FCAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94E3B222255A3A240021FCAA /* PBXTargetDependency */,
+			);
+			name = "EMS iOS AppUITests";
+			productName = "EMS iOS AppUITests";
+			productReference = 94E3B220255A3A240021FCAA /* EMS iOS AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94E3B1F7255A3A200021FCAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = RTS_6235_EMS;
+				TargetAttributes = {
+					94E3B1FE255A3A200021FCAA = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					94E3B214255A3A240021FCAA = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 94E3B1FE255A3A200021FCAA;
+					};
+					94E3B21F255A3A240021FCAA = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 94E3B1FE255A3A200021FCAA;
+					};
+				};
+			};
+			buildConfigurationList = 94E3B1FA255A3A200021FCAA /* Build configuration list for PBXProject "EMS iOS App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94E3B1F6255A3A200021FCAA;
+			productRefGroup = 94E3B200255A3A200021FCAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94E3B1FE255A3A200021FCAA /* EMS iOS App */,
+				94E3B214255A3A240021FCAA /* EMS iOS AppTests */,
+				94E3B21F255A3A240021FCAA /* EMS iOS AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94E3B1FD255A3A200021FCAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA90F9D26217CF800E646BC /* Colors.xcassets in Resources */,
+				94E3B20F255A3A240021FCAA /* LaunchScreen.storyboard in Resources */,
+				94E3B20C255A3A240021FCAA /* Assets.xcassets in Resources */,
+				BEA90FB0262183F000E646BC /* SortSelectorView.xib in Resources */,
+				94E3B20A255A3A200021FCAA /* Main.storyboard in Resources */,
+				BEF80012261E2E53007A7E02 /* FilterCard.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94E3B213255A3A240021FCAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94E3B21E255A3A240021FCAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94E3B1FB255A3A200021FCAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE9C6D8526146F9F00BB30F6 /* FilterCard.swift in Sources */,
+				94CC6AA525E6BD5C00D4294C /* HospitalsTasker.swift in Sources */,
+				BE9C6D77261466A900BB30F6 /* FilterSelectorVC.swift in Sources */,
+				94E3B27F255A551E0021FCAA /* HospitalIH.swift in Sources */,
+				94E3B274255A3DF70021FCAA /* HomeVC.swift in Sources */,
+				94CC6AA125E6BD4C00D4294C /* BackendURLs.swift in Sources */,
+				945D313729244B9F00B7D47E /* RecommendationIH.swift in Sources */,
+				94E3B203255A3A200021FCAA /* AppDelegate.swift in Sources */,
+				94E3B281255A5A6A0021FCAA /* Utils.swift in Sources */,
+				94CC6A9F25E6BD3C00D4294C /* Enums.swift in Sources */,
+				BE388A5A2613D1B900A3403E /* CheckListCell.swift in Sources */,
+				94E3B277255A420F0021FCAA /* HomeTableViewCell.swift in Sources */,
+				945D313529242F5100B7D47E /* RecommendVC.swift in Sources */,
+				94CC6AA625E6BD5C00D4294C /* WebCallTasker.swift in Sources */,
+				BEF8000C261E2E26007A7E02 /* FilterCheckbox.swift in Sources */,
+				BEEDE79326143DB30011BB13 /* FilterIH.swift in Sources */,
+				94E3B205255A3A200021FCAA /* SceneDelegate.swift in Sources */,
+				BEF8FFFF261E2DF6007A7E02 /* FilterButton.swift in Sources */,
+				BEA90FA22621838000E646BC /* MenuPopupHandler.swift in Sources */,
+				945D31392924822D00B7D47E /* StartVC.swift in Sources */,
+				BEA90FA8262183B200E646BC /* SortSelectorView.swift in Sources */,
+				949E8C3625FA9DC500FF934E /* LoadingVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94E3B211255A3A240021FCAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94E3B21A255A3A240021FCAA /* EMS_iOS_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94E3B21C255A3A240021FCAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94E3B225255A3A240021FCAA /* EMS_iOS_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94E3B217255A3A240021FCAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94E3B1FE255A3A200021FCAA /* EMS iOS App */;
+			targetProxy = 94E3B216255A3A240021FCAA /* PBXContainerItemProxy */;
+		};
+		94E3B222255A3A240021FCAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94E3B1FE255A3A200021FCAA /* EMS iOS App */;
+			targetProxy = 94E3B221255A3A240021FCAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94E3B208255A3A200021FCAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94E3B209255A3A200021FCAA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94E3B20D255A3A240021FCAA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94E3B20E255A3A240021FCAA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94E3B227255A3A240021FCAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		94E3B228255A3A240021FCAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94E3B22A255A3A240021FCAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A96N793463;
+				INFOPLIST_FILE = "EMS iOS App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "RTS-6235-EMS.EMS-iOS-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94E3B22B255A3A240021FCAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A96N793463;
+				INFOPLIST_FILE = "EMS iOS App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "RTS-6235-EMS.EMS-iOS-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		94E3B22D255A3A240021FCAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A96N793463;
+				INFOPLIST_FILE = "EMS iOS AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "RTS-6235-EMS.EMS-iOS-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EMS iOS App.app/EMS iOS App";
+			};
+			name = Debug;
+		};
+		94E3B22E255A3A240021FCAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A96N793463;
+				INFOPLIST_FILE = "EMS iOS AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "RTS-6235-EMS.EMS-iOS-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EMS iOS App.app/EMS iOS App";
+			};
+			name = Release;
+		};
+		94E3B230255A3A240021FCAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A96N793463;
+				INFOPLIST_FILE = "EMS iOS AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "RTS-6235-EMS.EMS-iOS-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "EMS iOS App";
+			};
+			name = Debug;
+		};
+		94E3B231255A3A240021FCAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A96N793463;
+				INFOPLIST_FILE = "EMS iOS AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "RTS-6235-EMS.EMS-iOS-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "EMS iOS App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94E3B1FA255A3A200021FCAA /* Build configuration list for PBXProject "EMS iOS App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94E3B227255A3A240021FCAA /* Debug */,
+				94E3B228255A3A240021FCAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94E3B229255A3A240021FCAA /* Build configuration list for PBXNativeTarget "EMS iOS App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94E3B22A255A3A240021FCAA /* Debug */,
+				94E3B22B255A3A240021FCAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94E3B22C255A3A240021FCAA /* Build configuration list for PBXNativeTarget "EMS iOS AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94E3B22D255A3A240021FCAA /* Debug */,
+				94E3B22E255A3A240021FCAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94E3B22F255A3A240021FCAA /* Build configuration list for PBXNativeTarget "EMS iOS AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94E3B230255A3A240021FCAA /* Debug */,
+				94E3B231255A3A240021FCAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94E3B1F7255A3A200021FCAA /* Project object */;
+}
